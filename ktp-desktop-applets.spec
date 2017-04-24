@@ -1,6 +1,6 @@
 Summary:	Desktop applets for KDE Telepathy
 Name:		ktp-desktop-applets
-Version:	16.12.2
+Version:	17.04.0
 Release:	1
 Epoch:		1
 License:	GPLv2+
@@ -39,7 +39,7 @@ BuildRequires:	cmake(KTp)
 %description
 Desktop applets for KDE Telepathy
 
-%files
+%files -f all.lang
 %{_libdir}/qt5/qml/org/kde/ktpchat
 %{_datadir}/kservices5/plasma-applet-org.kde.ktp-chat.desktop
 %{_datadir}/plasma/plasmoids/org.kde.ktp-chat
@@ -47,6 +47,7 @@ Desktop applets for KDE Telepathy
 %{_datadir}/plasma/plasmoids/org.kde.ktp-contactlist
 %{_datadir}/kservices5/plasma-applet-org.kde.person.desktop
 %{_datadir}/plasma/plasmoids/org.kde.person
+%{_libdir}/qt5/qml/org/kde/ktpcontactlist
 
 %prep
 %setup -q
@@ -57,3 +58,7 @@ Desktop applets for KDE Telepathy
 
 %install
 %ninja_install -C build
+%find_lang plasma_applet_org.kde.ktp-chat
+%find_lang plasma_applet_org.kde.ktp-contactlist
+%find_lang plasma_applet_org.kde.person
+cat *.lang >all.lang
