@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   ktp-desktop-applets-17.12.1.tar.xz: 1896164649e576b67360947df3d95854c4252490
+sources:
+  ktp-desktop-applets-17.12.2.tar.xz: c439bb8c54e254efa374e46a6b4833d301b5a0f5
