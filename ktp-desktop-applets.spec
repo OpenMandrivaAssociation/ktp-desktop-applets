@@ -1,6 +1,6 @@
 Summary:	Desktop applets for KDE Telepathy
 Name:		ktp-desktop-applets
-Version:	 18.11.80
+Version:	 18.11.90
 Release:	1
 Epoch:		1
 License:	GPLv2+
