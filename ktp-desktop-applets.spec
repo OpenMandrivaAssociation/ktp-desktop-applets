@@ -1,6 +1,6 @@
 Summary:	Desktop applets for KDE Telepathy
 Name:		ktp-desktop-applets
-Version:	22.12.0
+Version:	22.12.1
 Release:	1
 Epoch:		1
 License:	GPLv2+
